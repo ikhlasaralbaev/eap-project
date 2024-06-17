@@ -1,0 +1,9 @@
+export { default as ActiveArrowDown } from "./icons/arrow-down-active-icon.svg";
+export { default as ArrowDown } from "./icons/arrow-down-icon.svg";
+export { default as CartIcon } from "./icons/cart-icon.svg";
+export { default as CatalogIcon } from "./icons/category-icon.svg";
+export { default as LogoImage } from "./icons/logo.svg";
+export { default as MarkerIcon } from "./icons/marker-icon.svg";
+export { default as PhoneIcon } from "./icons/phone-icon.svg";
+export { default as SearchIcon } from "./icons/search-icon.svg";
+export { default as UserIcon } from "./icons/user-icon.svg";

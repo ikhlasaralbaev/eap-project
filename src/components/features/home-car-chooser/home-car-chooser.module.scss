@@ -1,0 +1,13 @@
+.homeCarChooser {
+  @apply px-[20px] pb-[30px] pt-[50px];
+
+  .homeCarChooserTitle {
+    h2 {
+      @apply mb-2 text-center text-[24px] font-[600] text-text;
+    }
+
+    p {
+      @apply text-center text-[20px] font-[400] text-text;
+    }
+  }
+}

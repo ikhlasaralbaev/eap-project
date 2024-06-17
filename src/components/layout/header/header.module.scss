@@ -1,0 +1,15 @@
+.header {
+  @apply shadow-headerShadow sticky bg-white;
+
+  .headerTop {
+    @apply border-b border-b-border bg-white py-[13px];
+  }
+
+  .headerContainer {
+    @apply flex items-center justify-between;
+  }
+
+  .headerBottom {
+    @apply border-b-border py-[13px];
+  }
+}
