@@ -1,0 +1,11 @@
+.oilBanner {
+  @apply relative flex flex-col rounded-card bg-primary align-bottom;
+
+  h1 {
+    @apply absolute p-[30px] text-[24px] font-bold text-white;
+  }
+
+  img {
+    @apply mt-auto w-full;
+  }
+}

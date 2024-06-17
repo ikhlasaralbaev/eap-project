@@ -1,6 +1,10 @@
 import { Container } from "components/common";
-import { HomeBanner, HomeCarChooser } from "components/features";
-import HomeCategories from "components/features/home-categories/home-categories";
+import {
+  HomeBanner,
+  HomeCarChooser,
+  HomeCategories,
+  HomeOils,
+} from "components/features";
 import { FC } from "react";
 import styles from "./home.module.scss";
 
@@ -12,6 +16,7 @@ const Home: FC = () => {
           <HomeCarChooser />
           <HomeBanner />
           <HomeCategories />
+          <HomeOils />
         </>
       </Container>
     </div>

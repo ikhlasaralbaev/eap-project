@@ -11,6 +11,7 @@ export default {
         primaryOrange: "rgba(255, 148, 49, 1)",
         grayBg: "rgba(244, 245, 246, 1)",
         mainBg: "rgba(250, 250, 253, 1)",
+        cardBg: "rgba(232, 237, 249, 1)",
       },
       boxShadow: {
         headerShadow: "0px 5px 20px 0px rgba(44, 41, 51, 0.1)",

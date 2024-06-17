@@ -6,5 +6,6 @@ export { default as HeaderCategories } from "./header-categories/header-categori
 export { default as Location } from "./location/location.tsx";
 export { default as LoginRegisterLink } from "./login-register-link/login-register-link.tsx";
 export { default as MenuBtn } from "./menu-btn/menu-btn.tsx";
+export { default as OilBanner } from "./oil-banner/oil-banner.tsx";
 export { default as PhoneNumber } from "./phone-number/phone-number.tsx";
 export { default as SearchField } from "./search-field/search-field.tsx";

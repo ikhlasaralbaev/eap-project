@@ -1,0 +1,7 @@
+.productItem {
+  @apply rounded-card border border-border bg-white p-[20px];
+
+  .productImage {
+    @apply mx-auto mb-[15px] h-[220px] w-[220px] object-contain;
+  }
+}
