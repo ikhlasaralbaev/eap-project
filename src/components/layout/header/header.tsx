@@ -33,7 +33,7 @@ const Header: FC = () => {
             </Flex>
 
             <Flex className="gap-[40px]" align="center">
-              <PhoneNumber className="sm:flex md:hidden xl:flex" />
+              <PhoneNumber className="sm:hidden xl:flex" />
               <LoginRegisterLink />
               <MenuBtn />
             </Flex>

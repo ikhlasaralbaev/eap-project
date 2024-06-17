@@ -5,5 +5,11 @@
 
 .homeLinksRow {
   @apply my-[60px] grid gap-[20px];
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+
+@media screen and (max-width: 400px) {
+  .homeLinksRow {
+    grid-template-columns: 1fr;
+  }
 }
