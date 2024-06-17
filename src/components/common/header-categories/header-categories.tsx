@@ -11,7 +11,7 @@ const HeaderCategories = () => {
   const selectCategory = (category: string) => setSelectedCategory(category);
 
   return (
-    <div className={styles.headerCategories} align="center">
+    <div className={styles.headerCategories}>
       {headerCategories.map((item) => (
         <button
           className={classNames(
