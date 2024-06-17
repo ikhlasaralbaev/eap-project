@@ -1,6 +1,7 @@
 import { Product1, Product3, Product4 } from "assets/images";
 
 export interface IProduct {
+  id: number;
   image: string;
   articul: string;
   rate: number;
@@ -12,6 +13,7 @@ export interface IProduct {
 
 export const products: IProduct[] = [
   {
+    id: 1,
     image: Product1,
     articul: "153789",
     rate: 4.0,
@@ -21,6 +23,7 @@ export const products: IProduct[] = [
     currentPrice: 515000,
   },
   {
+    id: 2,
     image: Product1,
     articul: "153789",
     rate: 4.0,
@@ -30,6 +33,7 @@ export const products: IProduct[] = [
     currentPrice: 515000,
   },
   {
+    id: 3,
     image: Product3,
     articul: "153789",
     rate: 4.0,
@@ -39,6 +43,7 @@ export const products: IProduct[] = [
     currentPrice: 515000,
   },
   {
+    id: 4,
     image: Product4,
     articul: "153789",
     rate: 4.0,

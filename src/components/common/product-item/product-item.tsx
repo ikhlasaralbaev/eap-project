@@ -1,21 +1,23 @@
 import { CartAddIcon } from "assets/images";
+import { useAppDispatch, useAppSelector } from "hooks/use-store";
 import { IProduct } from "mocks/products.mocks";
 import { FC } from "react";
+import { BsCartCheck } from "react-icons/bs";
+import { addProductToBasket } from "store/products/products.slice";
 import Flex from "../flex/flex";
 import StarRating from "../star-rate/star-rate";
 import styles from "./product-item.module.scss";
 
 interface Props extends IProduct {}
 
-const ProductItem: FC<Props> = ({
-  title,
-  image,
-  rate,
-  voites,
-  oldPrice,
-  currentPrice,
-  articul,
-}) => {
+const ProductItem: FC<Props> = (product) => {
+  const { basket } = useAppSelector((state) => state.products);
+  const dispatch = useAppDispatch();
+  const { title, image, rate, voites, oldPrice, currentPrice, articul, id } =
+    product;
+
+  const basketAdder = () => dispatch(addProductToBasket(product));
+
   return (
     <div className={styles.productItem}>
       <img
@@ -46,9 +48,15 @@ const ProductItem: FC<Props> = ({
             </h2>
           </div>
 
-          <button>
-            <img src={CartAddIcon} alt="cart add icon" />
-          </button>
+          {basket.find((item) => item.id === id) ? (
+            <button className="flex h-[40px] w-[40px] cursor-pointer items-center justify-center rounded-[8px] border-2 border-primary text-[24px] text-primary">
+              <BsCartCheck />
+            </button>
+          ) : (
+            <button onClick={basketAdder}>
+              <img src={CartAddIcon} alt="cart add icon" />
+            </button>
+          )}
         </Flex>
       </div>
     </div>

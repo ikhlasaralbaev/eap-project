@@ -40,8 +40,8 @@ const HomeProductSlider: FC<Props> = ({ title }) => {
           },
         }}
       >
-        {products.map((item) => (
-          <SwiperSlide key={item.image}>
+        {products.map((item, index) => (
+          <SwiperSlide key={index}>
             <ProductItem {...item} key={item.image} />
           </SwiperSlide>
         ))}
