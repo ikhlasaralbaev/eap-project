@@ -16,7 +16,7 @@ import styles from "./header.module.scss";
 
 const Header: FC = () => {
   return (
-    <div className={styles.header}>
+    <header className={styles.header}>
       <div className={styles.headerTop}>
         <Container className={styles.headerContainer}>
           <>
@@ -53,7 +53,7 @@ const Header: FC = () => {
           </>
         </Container>
       </div>
-    </div>
+    </header>
   );
 };
 

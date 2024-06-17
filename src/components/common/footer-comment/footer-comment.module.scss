@@ -1,0 +1,18 @@
+.footerComment {
+  @apply flex gap-[12px] rounded-card px-[20px] py-[15px];
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.1);
+
+  h2 {
+    @apply mb-1 text-[16px] text-white;
+  }
+
+  span {
+    @apply text-[14px] text-white;
+  }
+
+  .footerCommentIcon {
+    @apply h-[20px] w-[20px];
+  }
+}

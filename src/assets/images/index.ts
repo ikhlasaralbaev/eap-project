@@ -33,6 +33,8 @@ export { default as News2 } from "./news/news-2.png";
 export { default as News3 } from "./news/news-3.png";
 export { default as News4 } from "./news/news-4.png";
 
+export { default as CommentIcon } from "./icons/comment.svg";
+
 export { default as Category1 } from "./categories/category-1.svg";
 export { default as Category10 } from "./categories/category-10.svg";
 export { default as Category11 } from "./categories/category-11.svg";

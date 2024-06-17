@@ -1,0 +1,11 @@
+.footer {
+  @apply bg-primary;
+
+  .footerBottom {
+    @apply border-t-footerBorder flex justify-end gap-[30px] border-t py-[30px];
+
+    a {
+      @apply text-white;
+    }
+  }
+}

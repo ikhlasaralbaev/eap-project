@@ -29,7 +29,7 @@ const HomeBanner = () => {
         }}
       >
         {bannerItems.map((item) => (
-          <SwiperSlide>
+          <SwiperSlide key={item.title}>
             <BannerItem key={item.title} {...item} />
           </SwiperSlide>
         ))}

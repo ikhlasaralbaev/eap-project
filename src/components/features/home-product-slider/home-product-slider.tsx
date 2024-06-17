@@ -41,7 +41,7 @@ const HomeProductSlider: FC<Props> = ({ title }) => {
         }}
       >
         {products.map((item) => (
-          <SwiperSlide>
+          <SwiperSlide key={item.image}>
             <ProductItem {...item} key={item.image} />
           </SwiperSlide>
         ))}
