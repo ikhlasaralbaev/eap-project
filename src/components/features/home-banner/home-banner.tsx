@@ -1,6 +1,6 @@
 import SliderControl from "components/common/slider-control/slider-control";
-import useSwiperRef from "hooks/use-swiper";
 import { bannerItems } from "mocks/banner.mocks";
+import { useRef } from "react";
 import "swiper/css";
 import { Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -8,13 +8,15 @@ import BannerItem from "./banner-item/banner-item";
 import styles from "./home-banner.module.scss";
 
 const HomeBanner = () => {
-  const [nextEl, nextElRef] = useSwiperRef();
-  const [prevEl, prevElRef] = useSwiperRef();
+  const navigationPrevRef = useRef(null);
+  const navigationNextRef = useRef(null);
 
   return (
     <div className={styles.homeBannerWrapper}>
       <Swiper
         onInit={(swiper: any) => {
+          swiper.params.navigation.prevEl = navigationPrevRef.current;
+          swiper.params.navigation.nextEl = navigationNextRef.current;
           swiper.navigation.init();
           swiper.navigation.update();
         }}
@@ -22,8 +24,8 @@ const HomeBanner = () => {
         slidesPerView={1}
         modules={[Navigation]}
         navigation={{
-          prevEl: prevEl?.current,
-          nextEl: nextEl?.current,
+          prevEl: navigationPrevRef.current,
+          nextEl: navigationNextRef.current,
         }}
       >
         {bannerItems.map((item) => (
@@ -33,8 +35,8 @@ const HomeBanner = () => {
         ))}
       </Swiper>
 
-      <SliderControl position="left" ref={prevElRef} />
-      <SliderControl position="right" ref={nextElRef} />
+      <SliderControl position="left" ref={navigationPrevRef} />
+      <SliderControl position="right" ref={navigationNextRef} />
     </div>
   );
 };

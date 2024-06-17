@@ -1,0 +1,7 @@
+.homeCategoryItem {
+  @apply flex h-[100px] cursor-pointer items-center gap-[22px] border-b border-r border-b-border border-r-border px-[30px] transition-shadow duration-200;
+
+  &:hover {
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+  }
+}

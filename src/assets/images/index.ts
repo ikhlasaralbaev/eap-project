@@ -10,3 +10,15 @@ export { default as MarkerIcon } from "./icons/marker-icon.svg";
 export { default as PhoneIcon } from "./icons/phone-icon.svg";
 export { default as SearchIcon } from "./icons/search-icon.svg";
 export { default as UserIcon } from "./icons/user-icon.svg";
+
+export { default as Category1 } from "./categories/category-1.svg";
+export { default as Category10 } from "./categories/category-10.svg";
+export { default as Category11 } from "./categories/category-11.svg";
+export { default as Category2 } from "./categories/category-2.svg";
+export { default as Category3 } from "./categories/category-3.svg";
+export { default as Category4 } from "./categories/category-4.svg";
+export { default as Category5 } from "./categories/category-5.svg";
+export { default as Category6 } from "./categories/category-6.svg";
+export { default as Category7 } from "./categories/category-7.svg";
+export { default as Category8 } from "./categories/category-8.svg";
+export { default as Category9 } from "./categories/category-9.svg";
