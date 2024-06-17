@@ -28,6 +28,11 @@ export { default as Link1Bg } from "./banners/link1.png";
 export { default as Link2Bg } from "./banners/link2.png";
 export { default as Link3Bg } from "./banners/link3.png";
 
+export { default as News1 } from "./news/news-1.png";
+export { default as News2 } from "./news/news-2.png";
+export { default as News3 } from "./news/news-3.png";
+export { default as News4 } from "./news/news-4.png";
+
 export { default as Category1 } from "./categories/category-1.svg";
 export { default as Category10 } from "./categories/category-10.svg";
 export { default as Category11 } from "./categories/category-11.svg";

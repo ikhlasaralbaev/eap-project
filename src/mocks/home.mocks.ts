@@ -10,12 +10,22 @@ import {
   Category7,
   Category8,
   Category9,
+  News1,
+  News2,
+  News3,
+  News4,
 } from "assets/images";
 
 export interface IHomeCategory {
   icon: string;
   title: string;
   productCount: number;
+}
+
+export interface INews {
+  title: string;
+  date: string;
+  image: string;
 }
 
 export const homeCategories: IHomeCategory[] = [
@@ -74,5 +84,28 @@ export const homeCategories: IHomeCategory[] = [
     icon: Category11,
     title: "Автолампы",
     productCount: 730,
+  },
+];
+
+export const newsData: INews[] = [
+  {
+    title: "Lorem ipsum dolor sit amet consectetur.",
+    date: "24 Мая 2024",
+    image: News1,
+  },
+  {
+    title: "Lorem ipsum dolor sit amet consectetur.",
+    date: "24 Мая 2024",
+    image: News2,
+  },
+  {
+    title: "Lorem ipsum dolor sit amet consectetur.",
+    date: "24 Мая 2024",
+    image: News4,
+  },
+  {
+    title: "Lorem ipsum dolor sit amet consectetur.",
+    date: "24 Мая 2024",
+    image: News3,
   },
 ];

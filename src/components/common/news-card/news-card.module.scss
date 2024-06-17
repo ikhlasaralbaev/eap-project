@@ -1,0 +1,19 @@
+.newsCard {
+  @apply relative flex h-full w-full items-end px-[25px] py-[30px];
+
+  .newsImage {
+    @apply absolute bottom-0 left-0 right-0 top-0 h-full w-full object-cover;
+  }
+
+  .newsContent {
+    @apply absolute p-2;
+  }
+
+  span {
+    @apply text-[20px] text-white;
+  }
+
+  h1 {
+    @apply bottom-5 text-[20px] text-white;
+  }
+}

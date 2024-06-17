@@ -9,3 +9,4 @@ export { default as MenuBtn } from "./menu-btn/menu-btn.tsx";
 export { default as OilBanner } from "./oil-banner/oil-banner.tsx";
 export { default as PhoneNumber } from "./phone-number/phone-number.tsx";
 export { default as SearchField } from "./search-field/search-field.tsx";
+export { default as SliderControl } from "./slider-control/slider-control.tsx";
