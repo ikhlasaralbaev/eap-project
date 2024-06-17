@@ -1,5 +1,8 @@
+export { default as BannerImage } from "./banners/banner.png";
 export { default as ActiveArrowDown } from "./icons/arrow-down-active-icon.svg";
 export { default as ArrowDown } from "./icons/arrow-down-icon.svg";
+export { default as ArrowLeft } from "./icons/arrow-left-icon.svg";
+export { default as ArrowRight } from "./icons/arrow-right-icon.svg";
 export { default as CartIcon } from "./icons/cart-icon.svg";
 export { default as CatalogIcon } from "./icons/category-icon.svg";
 export { default as LogoImage } from "./icons/logo.svg";

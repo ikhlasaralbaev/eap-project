@@ -1,0 +1,26 @@
+.homeBannerWrapper {
+  @apply relative sm:mx-[20px] md:mx-[0];
+  .bannerItem {
+    @apply relative flex w-full items-center sm:h-[300px] md:h-[420px];
+
+    .bannerImage {
+      @apply absolute h-full w-full rounded-3xl object-cover;
+    }
+
+    .bannerContent {
+      @apply absolute sm:left-[20px] md:left-[30px] lg:left-[60px];
+
+      h1 {
+        @apply font-[700] text-white sm:text-[30px] lg:text-[40px];
+
+        span {
+          @apply rounded-[15px] bg-primaryOrange px-[10px] py-[5px] text-white;
+        }
+      }
+
+      p {
+        @apply mt-[20px] font-[500] text-white sm:text-[24px] md:text-[26px];
+      }
+    }
+  }
+}

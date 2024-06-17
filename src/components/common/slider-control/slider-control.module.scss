@@ -1,0 +1,11 @@
+.sliderControl {
+  box-shadow: 0px 4px 10px 0px rgba(46, 16, 102, 0.25);
+  @apply absolute z-50 flex h-[40px] w-[40px] cursor-pointer items-center justify-center rounded-card bg-white hover:bg-gray-50;
+
+  &.right {
+    @apply right-[-20px] top-[50%] translate-y-[-20px];
+  }
+  &.left {
+    @apply left-[-20px] top-[50%] translate-y-[-20px];
+  }
+}
