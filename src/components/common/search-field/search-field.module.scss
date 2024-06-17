@@ -1,0 +1,7 @@
+.searchField {
+  @apply w-[430px] items-center justify-between rounded-[6px] border border-border bg-grayBg p-[10px] sm:hidden md:flex;
+
+  .searchFieldInput {
+    @apply w-full bg-transparent px-[10px] outline-none;
+  }
+}
